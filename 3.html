@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="3.css">
+    <title>My Skills</title>
+    <style>
+         /* Back Button Styles */
+         .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-color-dark);
+            transform: scale(1.05);
+        }
+
+        .back-button i {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav_content">
+            <div class="logo">
+                <a href="#">Dhane.</a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="2.html">About</a></li>
+                <li><a href="3.html">Skills</a></li>
+                <li><a href="4.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="skills-section">
+        <div class="section-container">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-description">
+                Here are the technologies and tools I have experience with:
+            </p>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="ri-code-s-slash-line"></i>
+                    <h3>HTML</h3>
+                    <p>Building semantic and accessible structures for the web.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="ri-braces-line"></i>
+                    <h3>CSS</h3>
+                    <p>Styling and creating responsive designs with animations.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="ri-terminal-line"></i>
+                    <h3>JavaScript</h3>
+                    <p>Adding interactivity and functionality to web pages.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="ri-reactjs-line"></i>
+                    <h3>React</h3>
+                    <p>Building dynamic and modern user interfaces.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="ri-database-2-line"></i>
+                    <h3>SQL</h3>
+                    <p>Managing and querying relational databases.</p>
+                </div>
+                <div class="skill-item">
+                    <i class="ri-github-fill"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control and collaboration on projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="javascript:history.back()" class="back-button">
+        <i class="ri-arrow-left-line"></i> Back
+    </a>
+</body>
+</html>

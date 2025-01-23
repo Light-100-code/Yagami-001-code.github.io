@@ -1,0 +1,218 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-color: #20B2AA;
+    --primary-color-dark: #13bbb3;
+    --secondary-color: #faf5ff;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --extra-light: #ADD8E6;
+    --max-width: 1200px;
+}
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--extra-light);
+    z-index: 99;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav_content {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+.logo a:hover {
+    color: var(--primary-color-dark);
+}
+
+.checkbox {
+    display: none;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+}
+
+ul li a {
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    transition: color 0.3s, border-color 0.3s;
+}
+
+ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Section Styles */
+.section {
+    background-color: var(--secondary-color);
+    padding: 8rem 1rem 5rem 1rem;
+}
+
+.section_container {
+    max-width: var(--max-width);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+}
+
+.content .subtitle {
+    color: var(--primary-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.content .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.content .title span {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.description {
+    max-width: 800px;
+    margin: auto;
+    color: var(--text-light);
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* Button Styles */
+.action_btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.action_btns button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hire_me {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.hire_me:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.portfolio {
+    background-color: transparent;
+    color: var(--primary-color);
+}
+
+.portfolio:hover {
+    background-color: var(--primary-color-dark);
+    color: #ffffff;
+}
+
+/* Back Button */
+button[onclick="window.history.back()"] {
+    margin: 2rem auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[onclick="window.history.back()"]:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section_container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .action_btns {
+        justify-content: center;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .checkbox {
+        display: block;
+        cursor: pointer;
+    }
+
+    #check:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--extra-light);
+        padding: 1rem 0;
+    }
+}
