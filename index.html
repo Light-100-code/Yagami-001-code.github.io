@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="1.css">
+    <title>Portfolio</title>
+    <style>
+        /* Back Button Styles */
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 10px 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: var(--primary-color-dark);
+            transform: scale(1.05);
+        }
+
+        .back-button i {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav_content">
+            <div class="logo">
+                <a href="#">Dhane.</a>
+            </div>
+            <label for="" class="">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" name="check" id="check">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="2.html">About</a></li>
+                <li><a href="3.html">Skills</a></li>
+                <li><a href="4.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="section_container">
+            <div class="content">
+                <p class="subtitle">HELLO</p>
+                <h1 class="title">
+                    I'm <span>Dhane<br>a</span> Web Developer
+                </h1>
+                <p class="description">Welcome to my portfolio website!</p>
+                <div class="action_btns">
+                    <button class="hire_me">Hire Me</button>
+                    <button class="portfolio">Portfolio</button>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="boy.jpg" alt="Portrait of Dhane">
+            </div>
+        </div>
+    </section>
+
+    <a href="javascript:history.back()" class="back-button">
+        <i class="ri-arrow-left-line"></i> Back
+    </a>
+</body>
+</html>
+
